@@ -2,9 +2,11 @@
 
 ## Table of contents
 
-* [About this project](#-about-this-project)
+* [About this project](#about-this-project)
 * [Technologies](#technologies)
+* [How to play](#how-to-play)
 * [Author](#author)
+* [License](#license)
 
 ## About this project
 
@@ -16,6 +18,12 @@ Wolf Hunt is a simple Doodle Jump inspired jumping game. You can [play it online
  * CSS3 
  * Flexbox
  * Vanilla JS
+
+## How to play
+
+ * **Move left** - Left arrow 
+ * **Move right** - Right arrow
+ * **Move straight up** - Arrow up
 
 ## Author
 
