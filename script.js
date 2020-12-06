@@ -99,7 +99,6 @@ function moveRight() {
         clearInterval(leftTimerId);
         isGoingLeft = false;
     }
-    clearInterval(leftTimerId);
     rightTimerId = setInterval(function () {
         if (doodlerLeftSpace <= 400) {
             doodlerLeftSpace += 5;
