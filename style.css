@@ -1,7 +1,6 @@
 .grid {
     width: 500px;
     height: 800px;
-    background-color: green;
     position: relative;
     background-image: url("./images/woolf-hunt-bg.png");
     background-size: cover;

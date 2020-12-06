@@ -8,7 +8,7 @@
 
 ## About this project
 
-Wolf Hunt is a simple Doodle Jump inspired jumping game. You can [play it online now]().
+Wolf Hunt is a simple Doodle Jump inspired jumping game. You can [play it online now](https://loretta-arineva.github.io/wolf-hunt/).
 
 ## Technologies
 
