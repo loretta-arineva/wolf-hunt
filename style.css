@@ -1,0 +1,56 @@
+.grid {
+    width: 500px;
+    height: 800px;
+    background-color: green;
+    position: relative;
+    background-image: url("./images/woolf-hunt-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid div p, .para-begin  {
+    font-size: 50px;
+}
+
+.grid div .score {
+    font-size: 200px;
+    margin: 0;
+}
+
+.grid button {
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+}
+
+.start-btn {
+    align-self: center;
+}
+
+.grid button:hover {
+    border-radius: 25px;
+    box-shadow: #000;
+    color: cadetblue;
+}
+.doodler {
+    width: 100px;
+    height: 65px;
+    transition: rotateY 0.5s;
+}
+
+.doodler, .platform {
+    position: absolute;
+}
+.platform {
+    width: 100px;
+    height: 25px;
+    background-image: url("./images/wood-platform.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
