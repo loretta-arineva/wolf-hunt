@@ -34,7 +34,8 @@
 
 .grid button:hover {
     border-radius: 25px;
-    box-shadow: #000;
+    /* box-shadow: #000; */
+    color: cadetblue;
 }
 .doodler {
     width: 100px;

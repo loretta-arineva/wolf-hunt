@@ -81,6 +81,7 @@ function moveStraight() {
 }
 function moveLeft() {
     isGoingLeft = true;
+    clearInterval(leftTimerId);
     if (isGoingRight) {
         clearInterval(rightTimerId);
         isGoingRight = false;
@@ -95,6 +96,7 @@ function moveLeft() {
 
 function moveRight() {
     isGoingRight = true;
+    clearInterval(rightTimerId);
     if (isGoingLeft) {
         clearInterval(leftTimerId);
         isGoingLeft = false;
@@ -165,6 +167,20 @@ function control(e) {
     }
 }
 
+function mobileControl(e) {
+    console.log();
+
+    if (e.touches[0].clientX > 0 && e.touches[0].clientX < 200) {
+        doodler.style.transform = "rotateY(180deg)";
+        moveLeft();
+    } else if (e.touches[0].clientX > 320 && e.touches[0].clientX < 600) {
+        doodler.style.transform = "rotateY(360deg)";
+        moveRight();
+    } else if (e.touches[0].clientX > 200 && e.touches[0].clientX < 320) {
+        moveStraight();
+    }
+}
+
 function gameOver() {
     console.log('Game Over!');
     isGameOver = true;
@@ -193,6 +209,7 @@ function gameOver() {
     clearInterval(rightTimerId);
     clearInterval(leftTimerId);
 }
+
 function start() {
     if (startBtn.parentNode === grid || para.parentNode === grid) {
         grid.removeChild(startBtn);
@@ -204,15 +221,17 @@ function start() {
         setInterval(movePlatforms, 30);
         jump();
         document.addEventListener("keyup", control);
+        document.addEventListener("touchstart", mobileControl);
     }
 }
+
 startBtn.addEventListener("click", start);
 
 function restartGame() {
     score = 0;
-    // startPoint = 150;
-    // doodlerLeftSpace = 50;
-    // doodlerBottomSpace = startPoint;
+    startPoint = 150;
+    doodlerLeftSpace = 50;
+    doodlerBottomSpace = startPoint;
     isGameOver = false;
     platforms = [];
     grid.removeChild(gameEnd);
