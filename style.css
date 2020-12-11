@@ -1,3 +1,4 @@
+/* Main CSS */
 .grid {
     width: 500px;
     height: 800px;
@@ -34,8 +35,11 @@
 
 .grid button:hover {
     border-radius: 25px;
-    /* box-shadow: #000; */
-    color: cadetblue;
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    color: black;
 }
 .doodler {
     width: 100px;
