@@ -27,7 +27,7 @@ Wolf Hunt is a simple Doodle Jump inspired jumping game. You can [play it online
 
 ## Author
 
- * Loretta Arineva
+ * Loreta Krasteva
  
 ## License
 Source code is available under the MIT license, but please do not use/reuse the game graphics and images. In short you are encouraged to publish/distribute this game with or without modification to source code but with alternative graphics.
